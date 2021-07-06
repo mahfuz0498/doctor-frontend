@@ -1,0 +1,64 @@
+.emergencyTreate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.emergency__line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: rgb(14, 87, 124);
+  font-size: 18px;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+  text-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+.emergency__time {
+  margin: 0px 3px;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+.emergency__x {
+  color: red;
+  font-style: italic;
+  font-size: 25px;
+}
+.emergency__logo {
+  background: white;
+  color: red;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+.emergency__des {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.emergency__liner {
+  margin: 10px 0px;
+  width: 100%;
+  height: 1px;
+  background: rgb(116, 113, 113);
+  box-shadow: 1px 1px 1px 0.1px rgba(0, 0, 0, 0.7);
+}
+
+.emergency__button {
+  width: 120px;
+  padding: 10px 3px;
+  background-color: rgb(48, 110, 124, 0.9);
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgb(48, 110, 124);
+  outline-width: 0;
+  border-radius: 99px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.emergency__button:hover {
+  background: rgb(32, 143, 212);
+  border: 1px solid rgb(7, 162, 165);
+  color: rgba(255, 255, 255, 0.6);
+}

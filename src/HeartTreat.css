@@ -1,0 +1,48 @@
+.heart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  width: 100%;
+}
+
+.heart__title {
+  font-weight: 800;
+  font-size: 20px;
+  color: rgb(36, 39, 39);
+}
+.heart__middle {
+  color: rgb(14, 87, 124);
+}
+
+.heart__description {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 5px 0px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding-right: 55vw;
+}
+
+.heart__button {
+  width: 120px;
+  padding: 10px 3px;
+  background-color: rgb(48, 110, 124, 0.9);
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgb(48, 110, 124);
+  outline-width: 0;
+  border-radius: 99px;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+
+.heart__button:hover {
+  background: rgb(32, 143, 212);
+  border: 1px solid rgb(7, 162, 165);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media only screen and (max-width: 600px) {
+  .heart__description {
+    padding-right: 15vw;
+  }
+}

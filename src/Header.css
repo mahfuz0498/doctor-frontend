@@ -1,0 +1,139 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background: linear-gradient(
+    to left,
+    rgba(239, 246, 245),
+    rgba(239, 246, 245, 0.1)
+  );
+  z-index: 100;
+  position: sticky;
+  top: 0;
+}
+
+.header__dark {
+  background: rgb(255, 255, 255);
+}
+
+.header__link {
+  text-decoration: none;
+  height: 50px;
+}
+
+.header__logo {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  padding-right: auto;
+  width: 60px;
+  object-fit: contain;
+  height: 100%;
+}
+
+.header__logo img {
+  width: 50px;
+  padding: 2px;
+  padding: -2px;
+}
+
+.header__nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 3%;
+}
+
+.header__nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+}
+
+.header__nav ul li {
+  padding: 2px 5px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  transition: 0.1s;
+}
+
+.header__nav ul li:hover {
+  background: rgba(21, 199, 178, 0.5);
+  color: white;
+}
+
+.header__menu {
+  visibility: hidden;
+  border: 2px solid rgba(3, 102, 117, 0.8);
+  padding: 0px 2px;
+}
+
+.header__menuBurger {
+  color: rgb(3, 102, 117);
+}
+.header__menu:hover {
+  border: 2px solid rgb(3, 102, 117);
+}
+
+@media only screen and (max-width: 600px) {
+  .header__menu {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .header__nav {
+    /* visibility: hidden; */
+  }
+  .header__nav ul {
+    flex-direction: column;
+    position: absolute;
+    right: calc(40vw);
+    /* top: calc(-100vh); */
+  }
+
+  .header__burger ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* margin-bottom: 40vh; */
+    top: 50px;
+    right: 0px;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    background: rgb(199, 220, 228);
+    z-index: 50;
+    /* padding-bottom: 70vh; */
+    padding-bottom: 50px;
+    transition: 0.5s;
+  }
+  .header__burger ul li {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background: green; */
+    /* border-bottom: 0.05px solid rgb(148, 136, 136); */
+    max-height: 50px;
+  }
+  .header__burger ul li:hover {
+    /* transform: rotateX(5deg); */
+  }
+  .header__hide ul {
+    top: -100vh;
+  }
+  .header__link {
+    width: 100%;
+  }
+}
